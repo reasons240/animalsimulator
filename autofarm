@@ -23,48 +23,51 @@ end
 
 local MainGui = CreateInstance("ScreenGui", {Name = "MainGui", ResetOnSpawn = false, Enabled = true, Parent = game:GetService("Players").LocalPlayer.PlayerGui})
 local MainFrame = CreateInstance("Frame", {Name = "MainFrame", Size = UDim2.new(0, 250, 0, 250), Position = UDim2.new(0.5, -125, 0.5, -125), BackgroundColor3 = Color3.fromRGB(50, 52, 49), BackgroundTransparency = 0, BorderSizePixel = 0, Parent = MainGui, Active = true, Draggable = true})
-local Notice = CreateInstance("TextLabel", {Name = "Notice", Text = "Made by: j0sh#0645", BorderSizePixel = 0, BackgroundColor3 = Color3.fromRGB(15, 15, 15), BackgroundTransparency = 1, Parent = MainFrame, TextSize = 18, Size = UDim2.new(1, 0, 0, 15), Position = UDim2.new(0, 0, 0, 0), Font = Enum.Font.SourceSansLight, TextColor3 = Color3.fromRGB(255, 255, 255)})
-local Autofarm1 = CreateInstance("TextButton", {Name = "Autofarm1", Text = "Lava Monster Start", BorderSizePixel = 0, BackgroundColor3 = Color3.fromRGB(25, 25, 25), BackgroundTransparency = 0.8, Parent = MainFrame, TextSize = 18, Size = UDim2.new(1, 0, 0, 15), Position = UDim2.new(0, 0, 0, 50), Font = Enum.Font.SourceSansLight, TextColor3 = Color3.fromRGB(255, 255, 255)})
-local Stop = CreateInstance("TextButton", {Name = "Stop", Text = "Stop", BorderSizePixel = 0, BackgroundColor3 = Color3.fromRGB(25, 25, 25), BackgroundTransparency = 0.8, Parent = MainFrame, TextSize = 18, Size = UDim2.new(1, 0, 0, 15), Position = UDim2.new(0, 0, 0, 70), Font = Enum.Font.SourceSansLight, TextColor3 = Color3.fromRGB(255, 255, 255)})
-local Autofarm2 = CreateInstance("TextButton", {Name = "Autofarm2", Text = "Giant Gryphon Start", BorderSizePixel = 0, BackgroundColor3 = Color3.fromRGB(25, 25, 25), BackgroundTransparency = 0.8, Parent = MainFrame, TextSize = 18, Size = UDim2.new(1, 0, 0, 15), Position = UDim2.new(0, 0, 0, 90), Font = Enum.Font.SourceSansLight, TextColor3 = Color3.fromRGB(255, 255, 255)})
-local Teleport1 = CreateInstance("TextButton", {Name = "Teleport1", Text = "Teleport To Lava Monster", BorderSizePixel = 0, BackgroundColor3 = Color3.fromRGB(25, 25, 25), BackgroundTransparency = 0.8, Parent = MainFrame, TextSize = 18, Size = UDim2.new(1, 0, 0, 15), Position = UDim2.new(0, 0, 0, 110), Font = Enum.Font.SourceSansLight, TextColor3 = Color3.fromRGB(255, 255, 255)})
-local Teleport2 = CreateInstance("TextButton", {Name = "Teleport2", Text = "Teleport To Giant Gryphon", BorderSizePixel = 0, BackgroundColor3 = Color3.fromRGB(25, 25, 25), BackgroundTransparency = 0.8, Parent = MainFrame, TextSize = 18, Size = UDim2.new(1, 0, 0, 15), Position = UDim2.new(0, 0, 0, 130), Font = Enum.Font.SourceSansLight, TextColor3 = Color3.fromRGB(255, 255, 255)})
+local Notice = CreateInstance("TextLabel", {Name = "Notice", Text = "Made by: Kyndrag", BorderSizePixel = 0, BackgroundColor3 = Color3.fromRGB(15, 15, 15), BackgroundTransparency = 1, Parent = MainFrame, TextSize = 18, Size = UDim2.new(1, 0, 0, 15), Position = UDim2.new(0, 0, 0, 0), Font = Enum.Font.SourceSansLight, TextColor3 = Color3.fromRGB(255, 255, 255)})
+local leaf = CreateInstance("TextButton", {Name = "leaf", Text = "pegasus leaf", BorderSizePixel = 0, BackgroundColor3 = Color3.fromRGB(25, 25, 25), BackgroundTransparency = 0.8, Parent = MainFrame, TextSize = 18, Size = UDim2.new(1, 0, 0, 15), Position = UDim2.new(0, 0, 0, 50), Font = Enum.Font.SourceSansLight, TextColor3 = Color3.fromRGB(255, 255, 255)})
+local XPFarm = CreateInstance("TextButton", {Name = "XPFarm", Text = "Farm XP", BorderSizePixel = 0, BackgroundColor3 = Color3.fromRGB(25, 25, 25), BackgroundTransparency = 0.8, Parent = MainFrame, TextSize = 18, Size = UDim2.new(1, 0, 0, 15), Position = UDim2.new(0, 0, 0, 70), Font = Enum.Font.SourceSansLight, TextColor3 = Color3.fromRGB(255, 255, 255)})
+local StopFarming = CreateInstance("TextButton", {Name = "StopFarming", Text = "Stop Farming", BorderSizePixel = 0, BackgroundColor3 = Color3.fromRGB(25, 25, 25), BackgroundTransparency = 0.8, Parent = MainFrame, TextSize = 18, Size = UDim2.new(1, 0, 0, 15), Position = UDim2.new(0, 0, 0, 90), Font = Enum.Font.SourceSansLight, TextColor3 = Color3.fromRGB(255, 255, 255)})
+local tiny = CreateInstance("TextButton", {Name = "tiny", Text = "Become Tiny", BorderSizePixel = 0, BackgroundColor3 = Color3.fromRGB(25, 25, 25), BackgroundTransparency = 0.8, Parent = MainFrame, TextSize = 18, Size = UDim2.new(1, 0, 0, 15), Position = UDim2.new(0, 0, 0, 110), Font = Enum.Font.SourceSansLight, TextColor3 = Color3.fromRGB(255, 255, 255)})
+local feather = CreateInstance("TextButton", {Name = "feather", Text = "pegasus feather", BorderSizePixel = 0, BackgroundColor3 = Color3.fromRGB(25, 25, 25), BackgroundTransparency = 0.8, Parent = MainFrame, TextSize = 18, Size = UDim2.new(1, 0, 0, 15), Position = UDim2.new(0, 0, 0, 130), Font = Enum.Font.SourceSansLight, TextColor3 = Color3.fromRGB(255, 255, 255)})
 --------------------------------------------------------------
-Autofarm1.MouseButton1Down:Connect(function()
+leaf.MouseButton1Down:Connect(function()
+local args = {
+    [1] = "carry",
+    [2] = "leaf"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PegasusQuestEvent"):FireServer(unpack(args))
+end)
+
+XPFarm.MouseButton1Down:Connect(function()
 _G.On = true
 while _G.On==true do
 wait()
-local A_1 = game:GetService("Workspace").NPC.LavaGorilla.Humanoid
-game:GetService("ReplicatedStorage").jdskhfsIIIllliiIIIdchgdIiIIIlIlIli:FireServer(A_1, 2)
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("CoinEvent"):FireServer()
 end
 end)
 
-Stop.MouseButton1Down:Connect(function()
+StopFarming.MouseButton1Down:Connect(function()
 _G.On = false
 end)
 
-Autofarm2.MouseButton1Down:Connect(function()
-_G.On = true
-while _G.On==true do
-wait()
-local A_1 = game:GetService("Workspace").NPC.Griffin.Humanoid
-game:GetService("ReplicatedStorage").jdskhfsIIIllliiIIIdchgdIiIIIlIlIli:FireServer(A_1, 15)
-end
-end)
-
-Teleport1.MouseButton1Down:Connect(function()
-local oh1 = CFrame.new(342.22589111328125, 662.1678466796875, 1381.48779296875)
+tiny.MouseButton1Down:Connect(function()
+local oh1 = CFrame.new(-511.31207275390625, 638.3619995117188, 116.12837219238281)
 local oh2 = game:GetService("Players")
 local oh3 = oh2.LocalPlayer.Character.HumanoidRootPart
-
-
+oh3.CFrame = oh1
+wait(5)
+local oh1 = CFrame.new(-126.85738372802734, 642.1845703125, 508.9164123535156)
+local oh2 = game:GetService("Players")
+local oh3 = oh2.LocalPlayer.Character.HumanoidRootPart
 oh3.CFrame = oh1
 end)
 
-Teleport2.MouseButton1Down:Connect(function()
-local oh1 = CFrame.new(264.19769287109375, 106.0942153930664, 510.8307189941406)
-local oh2 = game:GetService("Players")
-local oh3 = oh2.LocalPlayer.Character.HumanoidRootPart
+feather.MouseButton1Down:Connect(function()
+local args = {
+    [1] = "carry",
+    [2] = "feather"
+}
 
-oh3.CFrame = oh1
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PegasusQuestEvent"):FireServer(unpack(args))
 end)
